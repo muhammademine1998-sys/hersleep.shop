@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hersleeps — Натуральные пижамы</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Georgia', serif;
+        }
+
+        body {
+            background-color: #fcf8f6;
+            color: #3a3232;
+            line-height: 1.6;
+            padding-top: 80px;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 9999;
+            border-bottom: 1px solid #f0e4df;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            color: #5c4d4d;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #7a6b6b;
+            font-size: 14px;
+            text-transform: uppercase;
+            margin-left: 15px;
+        }
+
+        .hero {
+            background-color: #e8dddb;
+            padding: 60px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            color: #4a3b3b;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #6e5d5d;
+            font-style: italic;
+        }
+
+        .catalog-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .category-title {
+            font-size: 24px;
+            color: #5c4d4d;
+            margin: 50px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e8dddb;
+            letter-spacing: 1px;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background: #fff;
+            border: 1px solid #e8dddb;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-image {
+            height: 320px;
+            background-size: cover;
+            background-position: center;
+            background-color: #f5ecea; /* Серый фон, пока картинка загружается */
+        }
+
+        .product-info {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-title {
+            font-size: 16px;
+            color: #4a3b3b;
+            margin-bottom: 10px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product-price {
+            font-size: 16px;
+            color: #9c847c;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .btn-link {
+            display: block;
+            text-decoration: none;
+            background-color: #5c4d4d;
+            color: white;
+            padding: 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .btn-link:hover {
+            background-color: #bfa397;
+        }
+
+        footer {
+            background-color: #4a3b3b;
+            color: #fcf8f6;
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">hersleeps</div>
+        <nav>
+            <a href="#cotton">Хлопок</a>
+            <a href="#bamboo">Бамбук</a>
+            <a href="#premium">Премиум</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Коллекция hersleeps</h1>
+        <p>Натуральный хлопок и бамбук для твоего идеального комфорта.</p>
+    </section>
+
+    <main class="catalog-container">
+
+        <!-- ================= ХЛОПОК ================= -->
+        <h2 class="category-title" id="cotton">Cotton Line — Уютный Хлопок (1-10)</h2>
+        <div class="products-grid">
+            <!-- 1 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('img/1.jpg');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Хлопковый сет «Утренний Кофе»</h3>
+                    <div class="product-price">490 000 сум</div>
+                    <a href="https://t.me/HersleepAI?text=Заказ:%20Хлопковый%20сет%20Утренний%20Кофе" target="_blank" class="btn-link">Заказать</a>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('img/2.jpg');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Классическая белая пижама из хлопка</h3>
+                    <div class="product-price">450 000 сум</div>
+                    <a href="https://t.me/HersleepAI?text=Заказ:%20Классическая%20белая%20пижама" target="_blank" class="btn-link">Заказать</a>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('img/3.jpg');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Хлопковая рубашка «Oversize Rose»</h3>
+                    <div class="product-price">390 000 сум</div>
+                    <a href="https://t.me/HersleepAI?text=Заказ:%20Рубашка%20Oversize%20Rose" target="_blank" class="btn-link">Заказать</a>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('img/4.jpg');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Комплект в полоску «Casual Sleep»</h3>
+                    <div class="product-price">520 000 сум</div>
+                    <a href="https://t.me/HersleepAI?text=Заказ:%20Комплект%20Casual%20Sleep" target="_blank" class="btn-link">Заказать</a>
+                </div>
+            </div>
+            <!-- 5 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('img/5.jpg');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Топ и шортики «Миндальная пудра»</h3>
+                    <div class="product-price">350 000 сум</div>
+                    <a href="https://t.me/HersleepAI?text=Заказ:%20Топ%20и%20шорты%20Миндальная%20пудра" target="_blank" class="btn-link">Заказать</a>
+                </div>
+            </div>
+            <!-- 6 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('img/6.jpg');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Домашний костюм «Молочный трикотаж»</h3>
+                    <div class="product-price">580 000 сум</div>
+                    <a href="https://t.me/HersleepAI?text=Заказ:%20Молочный%20трикотаж" target="_blank" class="btn-link">Заказать</a>
+                </div>
+            </div>
+            <!-- 7 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('img/7.jpg');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Хлопковое платье-миди для дома</h3>
+                    <div class="product-price">420 000 сум</div>
+                    <a href="https://t.me/HersleepAI?text=Заказ:%20Платье-миди%20для%20дома" target="_blank" class="btn-link">Заказать</a>
+                </div>
+            </div>
+            <!-- 8 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('img/8.jpg');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Лёгкий хлопковый халат «Уют»</h3>
+                    <div class="product-price">460 000 сум</div>
+                    <a href="https://t.me/HersleepAI?text=Заказ:%20Хлопковый%20халат%20Уют" target="_blank" class="btn-link">Заказать</a>
+                </div>
+            </div>
+            <!-- 9 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('img/9.jpg');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Клетчатая пижама «Сканди»</h3>
+                    <div class="product-price">540 000 сум</div>
+                    <a href="https://t.me/HersleepAI?text=Заказ:%20Клетчатая%20пижама%20Сканди" target="_blank" class="btn-link">Заказать</a>
+                </div>
+            </div>
+            <!-- 10 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('img/10.jpg');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Хлопковый лонгслив «Warm Night»</h3>
+                    <div class="product-price">560 000 сум</div>
+                    <a href="https://t.me/HersleepAI?text=Заказ:%20Лонгслив%20Warm%20Night" target="_blank" class="btn-link">Заказать</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= БАМБУК ================= -->
+        <h2 class="category-title" id="bamboo">Bamboo Eco — Мягкий Бамбук (11-20)</h2>
+        <div class="products-grid">
+            <!-- 11 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('img/11.jpg');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Бамбуковый комплект «Мягкий Шёлк»</h3>
+                    <div class="product-price">580 000 сум</div>
+                    <a href="https://t.me/HersleepAI?text=Заказ:%20Бамбуковый%20комплект%20Мягкий%20Шёлк" target="_blank" class="btn-link">Заказать</a>
+                </div>
+            </div>
+            <!-- 12 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('img/12.jpg');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Летний топ и шорты из бамбука</h3>
+                    <div class="product-price">450 000 сум</div>
+                    <a href="https://t.me/HersleepAI?text=Заказ:%20Летний%20топ%20и%20шорты" target="_blank" class="btn-link">Заказать</a>
+                </div>
+            </div>
+            <!-- 13 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('img/13.jpg');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Бамбуковое кимоно «Фисташка»</h3>
+                    <div class="product-price">630 000 сум</div>
+                    <a href="https://t.me/HersleepAI?text=Заказ:%20Бамбуковое%20кимоно%20Фисташка" target="_blank" class="btn-link">Заказать</a>
+                </div>
+            </div>
+            <!-- 14 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('img/14.jpg');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Струящаяся пижама «Серый Графит»</h3>
+                    <div class="product-price">590 000 сум</div>
+                    <a href="https://t.me/HersleepAI?text=Заказ:%20Пижама%20Серый%20Графит" target="_blank" class="btn-link">Заказать</a>
+                </div>
+            </div>
+            <!-- 15 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('img/15.jpg');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Эко-костюм «Bamboo Soft»</h3>
+                    <div class="product-price">670 000 сум</div>
+                    <a href="https://t.me/HersleepAI?text=Заказ:%20Эко-костюм%20Bamboo%20Soft" target="_blank" class="btn-link">Заказать</a>
+                </div>
+            </div>
+            <!-- 16 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('img/16.jpg');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Сорочка на бретельках «Нежность»</h3>
+                    <div class="product-price">380 000 сум</div>
+                    <a href="https://t.me/HersleepAI?text=Заказ:%20Сорочка%20Нежность" target="_blank" class="btn-link">Заказать</a>
+                </div>
+            </div>
+            <!-- 17 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('img/17.jpg');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Уютный оверсайз-сет «Олива»</h3>
+                    <div class="product-price">610 000 сум</div>
+                    <a href="https://t.me/HersleepAI?text=Заказ:%20Оверсайз-сет%20Олива" target="_blank" class="btn-link">Заказать</a>
+                </div>
+            </div>
+            <!-- 18 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('img/18.jpg');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Бамбуковый халат «White Cloud»</h3>
+                    <div class="product-price">490 000 сум</div>
+                    <a href="https://t.me/HersleepAI?text=Заказ:%20Халат%20White%20Cloud" target="_blank" class="btn-link">Заказать</a>
+                </div>
+            </div>
+            <!-- 19 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('img/19.jpg');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Шорты и футболка «Дыхание бамбука»</h3>
+                    <div class="product-price">430 000 сум</div>
+                    <a href="https://t.me/HersleepAI?text=Заказ:%20Шорты%20и%20футболка%20Дыхание%20бамбука" target="_blank" class="btn-link">Заказать</a>
+                </div>
+            </div>
+            <!-- 20 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('img/20.jpg');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Пижама-брюки «Эко Мокко»</h3>
+                    <div class="product-price">620 000 сум</div>
+                    <a href="https://t.me/HersleepAI?text=Заказ:%20Пижама-брюки%20Эко%20Мокко" target="_blank" class="btn-link">Заказать</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= ПРЕМИУМ ================= -->
+        <h2 class="category-title" id="premium">Premium Comfort — Элитный Релакс (21-30)</h2>
+        <div class="products-grid">
+            <!-- 21 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('img/21.jpg');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Свободный сет «Облако сна»</h3>
+                    <div class="product-price">620 000 сум</div>
+                    <a href="https://t.me/HersleepAI?text=Заказ:%20Сет%20Облако%20сна" target="_blank" class="btn-link">Заказать</a>
+                </div>
+            </div>
+            <!-- 22 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('img/22.jpg');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Премиум комплект «Silky Bamboo»</h3>
+                    <div class="product-price">750 000 сум</div>
+                    <a href="https://t.me/HersleepAI?text=Заказ:%20Премиум%20комплект%20Silky%20Bamboo" target="_blank" class="btn-link">Заказать</a>
+                </div>
+            </div>
+            <!-- 23 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('img/23.jpg');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Элитный халат-кимоно «Латте»</h3>
+                    <div class="product-price">820 000 сум</div>
+                    <a href="https://t.me/HersleepAI?text=Заказ:%20Халат-кимоно%20Латте" target="_blank" class="btn-link">Заказать</a>
+                </div>
+            </div>
+            <!-- 24 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('img/24.jpg');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Пижама с кружевом «Французский Сад»</h3>
+                    <div class="product-price">690 000 сум</div>
+                    <a href="https://t.me/HersleepAI?text=Заказ:%20Пижама%20Французский%20Сад" target="_blank" class="btn-link">Заказать</a>
+                </div>
+            </div>
+            <!-- 25 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('img/25.jpg');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Комплект-тройка «Премиум лаванда»</h3>
+                    <div class="product-price">890 000 сум</div>
+                    <a href="https://t.me/HersleepAI?text=Заказ:%20Комплект-тройка%20Премиум%20лаванда" target="_blank" class="btn-link">Заказать</a>
+                </div>
+            </div>
+            <!-- 26 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('img/26.jpg');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Домашняя туника из муслина</h3>
+                    <div class="product-price">540 000 сум</div>
+                    <a href="https://t.me/HersleepAI?text=Заказ:%20Туника%20из%20муслина" target="_blank" class="btn-link">Заказать</a>
+                </div>
+            </div>
+            <!-- 27 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('img/27.jpg');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Костюм для отдыха «Aesthetic Beige»</h3>
+                    <div class="product-price">790 000 сум</div>
+                    <a href="https://t.me/HersleepAI?text=Заказ:%20Костюм%20Aesthetic%20Beige" target="_blank" class="btn-link">Заказать</a>
+                </div>
+            </div>
+            <!-- 28 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('img/28.jpg');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Комплект «Тёмный шоколад»</h3>
+                    <div class="product-price">720 000 сум</div>
+                    <a href="https://t.me/HersleepAI?text=Заказ:%20Комплект%20Тёмный%20шоколад" target="_blank" class="btn-link">Заказать</a>
+                </div>
+            </div>
+            <!-- 29 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('img/29.jpg');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Платье-рубашка из эко-бамбука</h3>
+                    <div class="product-price">480 000 сум</div>
+                    <a href="https://t.me/HersleepAI?text=Заказ:%20Платье-рубашка%20эко-бамбук" target="_blank" class="btn-link">Заказать</a>
+                </div>
+            </div>
+            <!-- 30 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('img/30.jpg');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Комплект для сна «Luxury Weekend»</h3>
+                    <div class="product-price">950 000 сум</div>
+                    <a href="https://t.me/HersleepAI?text=Заказ:%20Комплект%20Luxury%20Weekend" target="_blank" class="btn-link">Заказать</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 hersleeps.Твое удобство а с вас отзыв</p>
+    </footer>
+
+</body>
+</html>
